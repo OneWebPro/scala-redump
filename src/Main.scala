@@ -23,7 +23,7 @@ object Main extends App {
     loadFile = "temp.dump"
 
   if (saveFile.isEmpty)
-    saveFile = "temp.array"
+    saveFile = "temp.php"
 
   if (!Files.exists(FileSystems.getDefault.getPath(loadFile))) {
     Exception :>(Error.NO_FILE, loadFile)
