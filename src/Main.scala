@@ -10,14 +10,21 @@ import pl.project13.scala.rainbow.Rainbow._
  */
 object Main extends App {
 
-  var loadFile = args(0)
-  var saveFile = args(1)
+  var loadFile = ""
+  var saveFile = ""
+
+
+  if(args.size >= 1)
+    loadFile = args(0)
+
+  if(args.size >= 2)
+    saveFile = args(1)
 
   if (loadFile.isEmpty)
     loadFile = "temp.dump"
 
   if (saveFile.isEmpty)
-    loadFile = "temp.array"
+    saveFile = "temp.array"
 
   if (!Files.exists(FileSystems.getDefault().getPath(loadFile))) {
     Exception :>(Error.NO_FILE, loadFile)
