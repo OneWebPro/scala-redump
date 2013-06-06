@@ -13,11 +13,10 @@ object Main extends App {
   var loadFile = ""
   var saveFile = ""
 
-
-  if(args.size >= 1)
+  if (args.size >= 1)
     loadFile = args(0)
 
-  if(args.size >= 2)
+  if (args.size >= 2)
     saveFile = args(1)
 
   if (loadFile.isEmpty)
@@ -26,28 +25,31 @@ object Main extends App {
   if (saveFile.isEmpty)
     saveFile = "temp.array"
 
-  if (!Files.exists(FileSystems.getDefault().getPath(loadFile))) {
+  if (!Files.exists(FileSystems.getDefault.getPath(loadFile))) {
     Exception :>(Error.NO_FILE, loadFile)
   }
-  if (!Files.isReadable(FileSystems.getDefault().getPath(loadFile))) {
+  if (!Files.isReadable(FileSystems.getDefault.getPath(loadFile))) {
     Exception :>(Error.NOT_READABLE, loadFile)
   }
 
-  if (!Files.exists(FileSystems.getDefault().getPath(saveFile)))
-    Files.createFile(FileSystems.getDefault().getPath(saveFile))
+  if (!Files.exists(FileSystems.getDefault.getPath(saveFile)))
+    Files.createFile(FileSystems.getDefault.getPath(saveFile))
 
   writeToFile(saveFile, Undamper -> scala.io.Source.fromFile(loadFile).getLines().mkString)
   println("ReDump Success".green)
 
-  def using[A <: {def close() : Unit}, B](param: A)(f: A => B): B =
+  def using[A <: {def close()}, B](param: A)(f: A => B): B = {
     try {
       f(param)
     } finally {
       param.close()
     }
+  }
 
-  def writeToFile(fileName: String, data: String) =
+
+  def writeToFile(fileName: String, data: String) {
     using(new FileWriter(fileName)) {
       fileWriter => fileWriter.write(data)
     }
+  }
 }

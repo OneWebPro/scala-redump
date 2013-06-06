@@ -8,11 +8,17 @@ import scala.util.matching.Regex
  */
 object Patterns extends Enumeration{
   type Patterns = Regex
-  val array = "^(\\w*)(\\s*)((array|Array)\\s*\\(\\s*\\d*\\s*\\))(\\s*)(\\{)(\\s*)(.*)(\\s*)(\\})(.*)".r
-  val variable_name = "^(\\w*)(\\s*)(\\[)(\\s*)(\"\\w*\")(\\s*)(\\])(\\w*)(\\s*)(.*)".r
+  val array = "(?<=\\{)[^\\}]*(?=\\})".r
+  val array2 = "\\s*((array|Array)\\s*\\(\\s*\\d*\\s*\\))\\s*".r
+  val string = "\\s*(string\\s*\\(\\s*\\d*\\s*\\))\\s*".r
+  val int = "\\s*((integer|int)\\s*\\(\\s*\\d*\\s*\\))\\s*".r
+  val float = "\\s*(float\\s*\\(\\s*\\d*\\s*\\))\\s*".r
+  val boolean = "\\s*(boolean\\s*\\(\\s*(true|false)*\\s*\\))\\s*".r
+  val bracket = "(?<=\\()[^\\)]*(?=\\))".r
+  /*val variable_name = "(?<=\\[)[^]]+(?=\\])".r
   var variable_value ="^(\\w*)(\\s*)(\"(.*)\"|'(.*)')(\\w*)(\\s*)(.*)".r
   val integer = "^(\\w*)(\\s*)(integer\\s*\\(\\s*\\d*\\s*\\))(\\w*)(\\s*)(.*)".r
   val float = "^(\\w*)(\\s*)(float\\s*\\(\\s*\\d*\\s*\\))(\\w*)(\\s*)(.*)".r
   val boolean = "^(\\w*)(\\s*)(boolean\\s*\\(\\s*(true|false)\\s*\\))(\\w*)(\\s*)(.*)".r
-  val brackets ="^(\\w*)(\\s*)\\(\\d*\\)(\\w*)(\\s*)(.*)".r
+  val brackets ="^(\\w*)(\\s*)\\(\\d*\\)(\\w*)(\\s*)(.*)".r*/
 }
