@@ -41,7 +41,7 @@ object Messages {
   }
 
 
-  private def line() {
+  def line() {
     print("\n")
     for (a <- 1 to 10)
       print("*")
