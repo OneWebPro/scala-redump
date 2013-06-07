@@ -47,13 +47,13 @@ object Undamper {
             val change2 = m2.group(2)
             if (change2.charAt(0) == "\"".charAt(0) && change2.charAt(change2.length - 1) == "\"".charAt(0)) {
               val to_change2 = change2 dropRight 1 drop 1
-              matches = matches.replace(change2, "\'" + to_change2 + "\',\n\t")
+              matches = matches.replace(change2, "\'" + to_change2.replace("\'","") + "\',\n\t")
             }
           }
         }
         if (change.charAt(0) == "\"".charAt(0) && change.charAt(change.length - 1) == "\"".charAt(0)) {
           val to_change = change dropRight 1 drop 1
-          matches = matches.replace(change, "\'" + to_change + "\',\n\t")
+          matches = matches.replace(change, "\'" + to_change.replace("\'","") + "\',\n\t")
         }
       }
     }
