@@ -15,7 +15,7 @@ object Messages {
     println("WE ARE LEGION!".red)
     println("I will ReDump your var_dump array!")
     println("You can set two paths, starting this app.\nFirst is for file to load, second is path to save file.")
-    println("Or I will set defaults files. Temporary is temp.dump for file with dump.\nAnd temp.array.php for result.")
+    println("Or I will set defaults files. Temporary is " + "temp.dump".red + " for file with dump.\nAnd " + "temp.array.php".red + " for result.")
     println("Now I start ReDumping ser.")
     line
   }
