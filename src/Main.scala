@@ -10,11 +10,13 @@ import pl.project13.scala.rainbow.Rainbow._
  */
 object Main extends App {
 
+  Messages.hello()
+
   var loadFile = ""
   var saveFile = ""
 
   if (args.size >= 1)
-    loadFile = args(0)
+  loadFile = args(0)
 
   if (args.size >= 2)
     saveFile = args(1)
@@ -23,7 +25,9 @@ object Main extends App {
     loadFile = "temp.dump"
 
   if (saveFile.isEmpty)
-    saveFile = "temp.php"
+    saveFile = "temp.array.php"
+
+  Messages.files(loadFile,saveFile)
 
   if (!Files.exists(FileSystems.getDefault.getPath(loadFile))) {
     Exception :>(Error.NO_FILE, loadFile)
@@ -36,7 +40,8 @@ object Main extends App {
     Files.createFile(FileSystems.getDefault.getPath(saveFile))
 
   writeToFile(saveFile, Undamper -> scala.io.Source.fromFile(loadFile).getLines().mkString)
-  println("ReDump Success".green)
+
+  Messages.end(loadFile,saveFile)
 
   def using[A <: {def close()}, B](param: A)(f: A => B): B = {
     try {
