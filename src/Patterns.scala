@@ -11,7 +11,7 @@ object Patterns extends Enumeration{
   val array = "(?<=\\{)[^\\}]*(?=\\})".r
   val array2 = "\\s*((array|Array)\\s*\\(\\s*\\d*\\s*\\))\\s*".r
   val string = "\\s*(string\\s*\\(\\s*\\d*\\s*\\))\\s*".r
-  val int = "\\s*((integer|int)\\s*\\(\\s*\\d*\\s*\\))\\s*".r
+  val int = "\\s*((integer|int)\\s*\\(\\s*-?\\w*\\s*\\))\\s*".r
   val float = "\\s*(float\\s*\\(\\s*\\w*?.\\w*\\s*\\))\\s*".r
   val boolean = "\\s*((boolean|bool)\\s*\\(\\s*(true|false)*\\s*\\))\\s*".r
   val bracket = "(?<=\\()[^\\)]*(?=\\))".r
