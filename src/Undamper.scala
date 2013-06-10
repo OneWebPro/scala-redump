@@ -22,7 +22,6 @@ object Undamper {
     s2 = s2.replace("[", "")
     s2 = s2.replace("]", "")
     s2 = s2.replace("NULL", "NULL,\n\t")
-    s2 = s2.replace("0=>array(", "\t0=>array(")
     s2 = s2 dropRight 1
     "<?php \n\t return " + s2 + ";"
   }
