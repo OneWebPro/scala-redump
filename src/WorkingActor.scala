@@ -33,13 +33,19 @@ object WorkingActor extends Actor with ActorLogging {
         print("/")
       }
       case 2 => {
-        print("|")
+        print("-")
       }
       case 3 => {
+        print("|")
+      }
+      case 4 => {
         print("\\")
       }
+      case 5 => {
+        print("-")
+      }
       case _ => {
-        number = 0
+        number = -1
         drawWork()
       }
     }
@@ -47,8 +53,7 @@ object WorkingActor extends Actor with ActorLogging {
 
   def receive: WorkingActor.Receive = {
     case "start" => {
-      print("\n")
-      scheduler = system.scheduler.schedule(0 milliseconds, 0.5 .second, self, "work")
+      scheduler = system.scheduler.schedule(0 milliseconds, 0.1 .second, self, "work")
     }
     case "work" => {
       drawWork()
@@ -56,7 +61,7 @@ object WorkingActor extends Actor with ActorLogging {
     case "stop" => {
       print("\b \b")
       print("\b \b")
-      print("\n")
+      print("\b \b")
       scheduler.cancel
     }
   }

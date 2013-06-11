@@ -31,7 +31,7 @@ object Messages {
   }
 
   def end(loadFile: String, saveFile: String) {
-    print("ReDump Success! \n".green)
+    println("ReDump Success!".green)
     line
     val loadPath = FileSystems.getDefault.getPath(loadFile).toFile.getAbsolutePath
     val savePath = FileSystems.getDefault.getPath(saveFile).toFile.getAbsolutePath
@@ -42,9 +42,9 @@ object Messages {
 
 
   def line() {
-    print("\n")
+    var s = "*"
     for (a <- 1 to 10)
-      print("*")
-    print("\n")
+      s += "*"
+    println(s)
   }
 }
