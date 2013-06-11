@@ -22,7 +22,7 @@ object WorkingActor extends Actor with ActorLogging {
 
   var number: Int = 0
 
-  def drawWork: Unit = {
+  def drawWork()  {
     print("\b \b")
     number += 1
     number match {
@@ -40,7 +40,7 @@ object WorkingActor extends Actor with ActorLogging {
       }
       case _ => {
         number = 0
-        drawWork
+        drawWork()
       }
     }
   }
@@ -51,9 +51,10 @@ object WorkingActor extends Actor with ActorLogging {
       scheduler = system.scheduler.schedule(0 milliseconds, 0.5 .second, self, "work")
     }
     case "work" => {
-      drawWork
+      drawWork()
     }
     case "stop" => {
+      print("\b \b")
       print("\b \b")
       print("\n")
       scheduler.cancel
