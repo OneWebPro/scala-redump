@@ -1,6 +1,10 @@
+import akka.actor.{Props, ActorSystem}
+import akka.util.Timeout
 import java.io.FileWriter
 import java.nio.file.{FileSystems, Files}
 import pl.project13.scala.rainbow.Rainbow._
+import scala.concurrent.ExecutionContext
+import scala.concurrent.duration._
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,6 +13,15 @@ import pl.project13.scala.rainbow.Rainbow._
  * Time: 18:27
  */
 object Main extends App {
+
+  implicit val timeout: Timeout = 5.second
+
+  implicit val executionContext: ExecutionContext = ActorSystem("MySystem").dispatcher
+
+  val system = ActorSystem("MySystem")
+
+  val actor = system.actorOf(Props(WorkingActor))
+
 
   Messages.hello()
 
@@ -39,9 +52,15 @@ object Main extends App {
   if (!Files.exists(FileSystems.getDefault.getPath(saveFile)))
     Files.createFile(FileSystems.getDefault.getPath(saveFile))
 
+  actor ! "start"
+
   writeToFile(saveFile, Undamper -> scala.io.Source.fromFile(loadFile).getLines().mkString)
 
+  actor ! "stop"
+
   Messages.end(loadFile,saveFile)
+
+  sys.exit()
 
   def using[A <: {def close()}, B](param: A)(f: A => B): B = {
     try {
