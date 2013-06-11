@@ -5,6 +5,7 @@ import java.nio.file.{FileSystems, Files}
 import pl.project13.scala.rainbow.Rainbow._
 import scala.concurrent.ExecutionContext
 import scala.concurrent.duration._
+import akka.pattern.ask
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,6 +23,9 @@ object Main extends App {
 
   val actor = system.actorOf(Props(WorkingActor))
 
+  val time = system.actorOf(Props(TimerActor))
+
+  time ! "start"
 
   Messages.hello()
 
@@ -56,11 +60,11 @@ object Main extends App {
 
   writeToFile(saveFile, Undamper -> scala.io.Source.fromFile(loadFile).getLines().mkString)
 
-  actor ! "stop"
+  actor ? "stop"
 
   Messages.end(loadFile,saveFile)
 
-  sys.exit()
+  time ! "stop"
 
   def using[A <: {def close()}, B](param: A)(f: A => B): B = {
     try {
