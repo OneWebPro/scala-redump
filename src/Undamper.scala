@@ -1,5 +1,5 @@
-import java.util.regex.Pattern
-import scala.util.matching.Regex
+package cp
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,19 +11,31 @@ object Undamper {
 
   val endChar: String = ",\n\t"
 
+  //var changed : List[String] = List()
+
   def ->(s: String): String = {
     var s2 = s
     s2 = Patterns.array2.replaceAllIn(s2, "array")
     s2 = Patterns.string replaceAllIn(s2, "")
     s2 = s2.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
+    s2 = s2.replace("\"", "")
+    s2 = s2.replace("'", "")
+    s2 = fixNames(s2)
     s2 = replaceVariables(s2)
     s2 = s2.replace("}", "),")
     s2 = s2.replace("{", "( \n\t")
     s2 = s2.replace("[", "")
     s2 = s2.replace("]", "")
     s2 = s2.replace("NULL", "NULL,\n\t")
+    s2 = replaceLast(s2)
     s2 = s2 dropRight 1
     "<?php \n\t return " + s2 + ";"
+  }
+
+  private def fixNames(value: String): String = {
+    var matches: String = value
+    matches = Patterns.variable_name.replaceAllIn(matches, m => if (m.group(0).matches("\\s*(\\d*)\\s*")) m.group(0) else "'" + m.group(0) + "'")
+    matches
   }
 
   private def replaceVariables(value: String): String = {
@@ -40,12 +52,21 @@ object Undamper {
     var matches: String = value
     Patterns.text.findAllMatchIn(matches).foreach {
       (m) => {
-        val change = m.group(5)
-        if (change.charAt(0) == "\"".charAt(0) && change.charAt(change.length - 1) == "\"".charAt(0)) {
-          val to_change = change dropRight 1 drop 1
-          val groupChange = m.group(0).replace(change,"\'" + to_change.replace("\'","") + "\',\n\t")
-          matches = matches.replace(m.group(0),groupChange )
-        }
+        val replacment: String = "'" + m.group(5) + "'" + ",\n\t"
+        val groupReplace = m.group(0).replace(m.group(5), replacment)
+        matches = matches.replace(m.group(0), groupReplace)
+      }
+    }
+    matches
+  }
+
+  def replaceLast(value: String): String = {
+    var matches: String = value
+    Patterns.textLast.findAllMatchIn(matches).foreach {
+      (m) => {
+        val replacment: String = "'" + m.group(2) + "'" + ",\n\t"
+        val groupReplace = m.group(0).replace(m.group(2), replacment)
+        matches = matches.replace(m.group(0), groupReplace)
       }
     }
     matches
