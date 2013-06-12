@@ -9,9 +9,12 @@ import java.nio.file.FileSystems
 import pl.project13.scala.rainbow.Rainbow._
 
 object Messages {
+
+  val v: String = "1.0.0"
+
   def hello() {
     line
-    println("Hello User!")
+    println("Hello User! Im in version: " + v)
     println("WE ARE LEGION!".red)
     println("I will ReDump your var_dump array!")
     println("You can set two paths, starting this app.\nFirst is for file to load, second is path to save file.")
