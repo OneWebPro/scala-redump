@@ -12,7 +12,7 @@ import pl.project13.scala.rainbow.Rainbow._
 
 object Messages {
 
-  val v: String = "1.0.0"
+  val v: String = "2.0.0"
 
   def hello() {
     line

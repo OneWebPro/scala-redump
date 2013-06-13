@@ -14,7 +14,8 @@ object Undamper {
 
   def ->(s: String): String = {
     var s2 = s
-    s2 = Patterns.array2.replaceAllIn(s2, "array")
+    s2 = Patterns.arrayVar.replaceAllIn(s2, "array")
+    s2 = Patterns.arrayPrint.replaceAllIn(s2, "array")
     s2 = Patterns.string replaceAllIn(s2, "")
     s2 = s2.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
     s2 = s2.replace("\"", "")
@@ -51,9 +52,28 @@ object Undamper {
     var matches: String = value
     Patterns.text.findAllMatchIn(matches).foreach {
       (m) => {
-        val replacment: String = "'" + m.group(5) + "'" + ",\n\t"
-        val groupReplace = m.group(0).replace(m.group(5), replacment)
-        matches = matches.replace(m.group(0), groupReplace)
+        var replacment: String = "'" + m.group(5) + "'" + ",\n\t"
+
+        Patterns.textBracket.findAllMatchIn(replacment).foreach {
+          (m2) => {
+            replacment = "'" + m2.group(2) + "'" + ",\n\t }"
+          }
+        }
+
+//        Patterns.textBracket2.findAllMatchIn(replacment).foreach {
+//          (m2) => {
+//            replacment = m2.group(2)
+//          }
+//        }
+
+        if (replacment == "'',\n\t") {
+          replacment = "NULL\n\t" + m.group(6)
+          val groupReplace = m.group(0).replace(m.group(6), replacment)
+          matches = matches.replace(m.group(0), groupReplace)
+        } else {
+          val groupReplace = m.group(0).replace(m.group(5), replacment)
+          matches = matches.replace(m.group(0), groupReplace)
+        }
       }
     }
     matches
