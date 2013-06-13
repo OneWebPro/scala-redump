@@ -1,3 +1,5 @@
+package assets
+
 /**
  * Created with IntelliJ IDEA.
  * User: loki
@@ -6,8 +8,9 @@
  */
 
 import pl.project13.scala.rainbow.Rainbow._
+
 object Exception {
-  def :> (error: Error.Value, file: String) {
+  def :> (error: assets.Error.Value, file: String) {
     println("[ '" + file.red + "' ] = > " + error.toString.red)
     Messages.line
     sys.exit(1)

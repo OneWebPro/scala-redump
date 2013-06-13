@@ -1,3 +1,5 @@
+package assets
+
 /**
  * Created with IntelliJ IDEA.
  * User: loki

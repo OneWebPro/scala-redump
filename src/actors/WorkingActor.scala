@@ -1,3 +1,5 @@
+package actors
+
 import akka.actor.{Cancellable, ActorSystem, ActorLogging, Actor}
 import akka.util.Timeout
 import scala.concurrent.ExecutionContext

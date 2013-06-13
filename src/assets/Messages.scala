@@ -1,3 +1,5 @@
+package assets
+
 /**
  * Created with IntelliJ IDEA.
  * User: mromanski
@@ -14,7 +16,8 @@ object Messages {
 
   def hello() {
     line
-    println("Hello User! Im in version: " + v)
+    println("Created by loki@onewebpro!!".red)
+    println("Hello User! Im in version: " + v.green)
     println("WE ARE LEGION!".red)
     println("I will ReDump your var_dump array!")
     println("You can set two paths, starting this app.\nFirst is for file to load, second is path to save file.")

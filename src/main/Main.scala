@@ -1,3 +1,5 @@
+package main
+
 import akka.actor.{Props, ActorSystem}
 import akka.util.Timeout
 import java.io.FileWriter
@@ -6,6 +8,10 @@ import pl.project13.scala.rainbow.Rainbow._
 import scala.concurrent.ExecutionContext
 import scala.concurrent.duration._
 import akka.pattern.ask
+import actors._
+import assets._
+import dumping._
+
 
 /**
  * Created with IntelliJ IDEA.
