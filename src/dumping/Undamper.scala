@@ -6,7 +6,6 @@ package dumping
  * Date: 05.06.13
  * Time: 18:38
  */
-//TODO: fix one of array error
 object Undamper {
 
   val endChar: String = ",\n\t"
@@ -78,7 +77,11 @@ object Undamper {
               val list = m2.subgroups.filter(elem => elem != null)
               Patterns.checkIsDateTime.findFirstIn(m2.group(1)) match {
                 case None => {
-                  replacment = "'" + m2.group(2) + "'" + ",\n\t " + ")" * (list.size - 2)
+                  if(!m2.group(2).contentEquals(")")){
+                    replacment = "'" + m2.group(2) + "'"+ ",\n\t " + ")" * (list.size - 2)
+                  }else{
+                    replacment = "NULL" + ")" + ")" * (list.size - 2)
+                  }
                 }
                 case Some(_) => {
                   //Nothing
@@ -88,7 +91,7 @@ object Undamper {
           }
         }
         if (replacment == "'',\n\t") {
-          replacment = "NULL\n\t" + m.group(6)
+          replacment = "NULL" + m.group(6)
           val groupReplace = m.group(0).replace(m.group(6), replacment)
           matches = matches.replace(m.group(0), groupReplace)
         } else {
@@ -119,7 +122,7 @@ object Undamper {
             replacment = "NULL,\n\t" + m.group(3)
             val groupReplace = m.group(0).replace(m.group(3), replacment)
             matches = matches.replace(m.group(0), groupReplace)
-          } else {
+          } else if(!replacment.contentEquals("'NULL,',\n\t")) {
             val groupReplace = m.group(0).replace(m.group(2), replacment)
             matches = matches.replace(m.group(0), groupReplace)
           }
