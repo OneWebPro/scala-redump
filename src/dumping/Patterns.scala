@@ -12,7 +12,7 @@ object Patterns extends Enumeration{
   type Patterns = Regex
   val array = "(?<=\\{)[^\\}]*(?=\\})".r
   val arrayVar = "\\s*((array|Array)\\s*\\(\\s*\\d*\\s*\\))\\s*".r
-  val arrayPrint = "\\s*(array|Array)\\s*".r
+  val arrayPrint = "\\s*(Array)\\s*".r
   val string = "\\s*(string\\s*\\(\\s*\\d*\\s*\\))\\s*".r
   val int = "\\s*((integer|int)\\s*\\(\\s*-?\\w*\\s*\\))\\s*".r
   val float = "\\s*(float\\s*\\(\\s*\\w*?.\\w*\\s*\\))\\s*".r

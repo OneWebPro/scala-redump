@@ -9,7 +9,6 @@ package dumping
 //TODO: fix last null in print_r
 //TODO: fix empty array semicolon print_r
 //TODO: fix arrays not match print_r
-
 object Undamper {
 
   val endChar: String = ",\n\t"
@@ -25,7 +24,7 @@ object Undamper {
       s2 = Patterns.arrayPrint.replaceAllIn(s2, "array")
     }
     s2 = Patterns.string replaceAllIn(s2, "")
-    s2 = s2.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
+    s2 = s2.replaceAll( """<(?!/?a(?=>|\s.*>))/?.*?>""", "")
     s2 = s2.replace("\"", "")
     s2 = s2.replace("'", "")
     s2 = fixNames(s2)
