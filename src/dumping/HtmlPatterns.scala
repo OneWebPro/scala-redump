@@ -10,6 +10,8 @@ import scala.util.matching.Regex
  */
 object HtmlPatterns extends Enumeration{
   type Patterns = Regex
-  //val array = "(?<=\\{)[^\\}]*(?=\\})".r
+  val element = "(\\S+)=[\"']?((?:.(?![\"']?\\s+(?:\\S+)=|[>\"']))+.)[\"']?".r
+  //val element = "(\\S+)=(\"|'| |)(.*)(\"|'| |>)".r
+  val comments = "(?:[^<]|<[^!]|<![^-\\[]|<!\\[(?!CDATA)|<!\\[CDATA\\[.*?\\]\\]>|<!--(?:[^-]|-[^-])*-->)".r;
 }
 

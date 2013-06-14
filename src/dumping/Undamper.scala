@@ -21,7 +21,7 @@ object Undamper {
       s2 = Patterns.arrayPrint.replaceAllIn(s2, "array")
     }
     s2 = Patterns.string replaceAllIn(s2, "")
-    s2 = escapeHtml(s2);
+    s2 = escapeHtml(s2)
     s2 = fixNames(s2)
     s2 = replaceVariables(s2)
     if (!isPrint) {
@@ -177,6 +177,11 @@ object Undamper {
 
   def escapeHtml(value: String): String = {
     var matches: String = value
+    HtmlPatterns.element.findAllMatchIn(value).foreach {
+      (m) => {
+        println("!")
+      }
+    }
     matches
   }
 
