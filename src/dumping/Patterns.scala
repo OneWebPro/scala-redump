@@ -19,8 +19,8 @@ object Patterns extends Enumeration{
   val boolean = "\\s*((boolean|bool)\\s*\\(\\s*(true|false)*\\s*\\))\\s*".r
   val bracket = "(?<=\\()[^\\)]*(?=\\))".r
   val text = "(\\s*=>\\s*(?!\\s*array)(?!\\s*(integer|int)\\s*\\(\\s*-?\\d*\\s*\\))(?!\\s*(boolean|bool)\\s*\\(\\s*(true|false)*\\s*\\))(?!\\s*float\\s*\\(\\s*\\d*?.\\d*\\s*\\))(.*?)\\s*(\\[(\\'\\w*\\'|\\d*)\\]))".r
-  val textBracket = "(\\s*\\'(.*?)\\s*}\\',\\n\\t)".r
-  val textBracket2 = "(\\s*\\'(.*?)\\s*\\)\\',\\n\\t)".r
+  val textBracket = "(\\s*\\'(.*?)\\s*(})\\s*?(})*\\',\\n\\t)".r
+  val textBracket2 = "(\\s*\\'(.*?)\\s*(\\))\\s*?(\\))*\\',\\n\\t)".r
   val textLast = "(\\s*\\'\\w*\\'=>\\s*(?!\\s*array)(?!\\s*\\(int\\)\\s*-?\\d*\\s*,)(?!\\s*\\(float\\)\\s*\\d*?.\\d*\\s*)(?!\\s*\\')(.*?)(?!\\s*\\')\\s*(\\),))".r
   val variable_name = "(?<=\\[)[^]]+(?=\\])".r
   val test = "(.*?)^(?!.*}).*$".r

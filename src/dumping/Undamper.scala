@@ -6,29 +6,41 @@ package dumping
  * Date: 05.06.13
  * Time: 18:38
  */
+//TODO: fix last null in print_r
+//TODO: fix empty array semicolon print_r
+//TODO: fix arrays not match print_r
+
 object Undamper {
 
   val endChar: String = ",\n\t"
 
-  //var changed : List[String] = List()
+  var isPrint: Boolean = false
 
   def ->(s: String): String = {
     var s2 = s
-    s2 = Patterns.arrayVar.replaceAllIn(s2, "array")
-    s2 = Patterns.arrayPrint.replaceAllIn(s2, "array")
+    checkPrint(s2)
+    if (!isPrint) {
+      s2 = Patterns.arrayVar.replaceAllIn(s2, "array")
+    } else {
+      s2 = Patterns.arrayPrint.replaceAllIn(s2, "array")
+    }
     s2 = Patterns.string replaceAllIn(s2, "")
     s2 = s2.replaceAll( """<(?!\/?a(?=>|\s.*>))\/?.*?>""", "")
     s2 = s2.replace("\"", "")
     s2 = s2.replace("'", "")
     s2 = fixNames(s2)
     s2 = replaceVariables(s2)
-    s2 = s2.replace("}", "),")
-    s2 = s2.replace("{", "( \n\t")
+    if (!isPrint) {
+      s2 = s2.replace("}", "),")
+      s2 = s2.replace("{", "( \n\t")
+    }
     s2 = s2.replace("[", "")
     s2 = s2.replace("]", "")
     s2 = s2.replace("NULL", "NULL,\n\t")
     s2 = replaceLast(s2)
-    s2 = s2 dropRight 1
+    if (!isPrint) {
+      s2 = s2 dropRight 1
+    }
     "<?php \n\t return " + s2 + ";"
   }
 
@@ -41,9 +53,11 @@ object Undamper {
   private def replaceVariables(value: String): String = {
     var matches: String = value
     matches = replaceString(matches)
-    matches = replaceInt(matches)
-    matches = replaceFloat(matches)
-    matches = replaceBoolean(matches)
+    if (!isPrint) {
+      matches = replaceInt(matches)
+      matches = replaceFloat(matches)
+      matches = replaceBoolean(matches)
+    }
     matches
   }
 
@@ -53,19 +67,21 @@ object Undamper {
     Patterns.text.findAllMatchIn(matches).foreach {
       (m) => {
         var replacment: String = "'" + m.group(5) + "'" + ",\n\t"
-
-        Patterns.textBracket.findAllMatchIn(replacment).foreach {
-          (m2) => {
-            replacment = "'" + m2.group(2) + "'" + ",\n\t }"
+        if (!isPrint) {
+          Patterns.textBracket.findAllMatchIn(replacment).foreach {
+            (m2) => {
+              val list = m2.subgroups.filter(elem => elem != null)
+              replacment = "'" + m2.group(2) + "'" + ",\n\t " + "}" * (list.size - 2)
+            }
           }
-        }
-
-//        Patterns.textBracket2.findAllMatchIn(replacment).foreach {
-//          (m2) => {
-//            replacment = m2.group(2)
+        } else {
+//          Patterns.textBracket2.findAllMatchIn(replacment).foreach {
+//            (m2) => {
+//              val list = m2.subgroups.filter(elem => elem != null)
+//              replacment = "'" + m2.group(2) + "'" + ",\n\t " + ")," * (list.size - 2)
+//            }
 //          }
-//        }
-
+        }
         if (replacment == "'',\n\t") {
           replacment = "NULL\n\t" + m.group(6)
           val groupReplace = m.group(0).replace(m.group(6), replacment)
@@ -125,6 +141,15 @@ object Undamper {
       }
     }
     matches
+  }
+
+
+  def checkPrint(s: String) {
+    Patterns.arrayPrint.findAllMatchIn(s).foreach{
+      (m)=>{
+        isPrint = true
+      }
+    }
   }
 
 }
