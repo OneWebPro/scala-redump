@@ -21,9 +21,7 @@ object Undamper {
       s2 = Patterns.arrayPrint.replaceAllIn(s2, "array")
     }
     s2 = Patterns.string replaceAllIn(s2, "")
-    s2 = s2.replaceAll( """<(?!/?a(?=>|\s.*>))/?.*?>""", "")
-    s2 = s2.replace("\"", "")
-    s2 = s2.replace("'", "")
+    s2 = escapeHtml(s2);
     s2 = fixNames(s2)
     s2 = replaceVariables(s2)
     if (!isPrint) {
@@ -129,7 +127,6 @@ object Undamper {
         }
       }
     }
-
     matches
   }
 
@@ -176,6 +173,11 @@ object Undamper {
         isPrint = true
       }
     }
+  }
+
+  def escapeHtml(value: String): String = {
+    var matches: String = value
+    matches
   }
 
 }
