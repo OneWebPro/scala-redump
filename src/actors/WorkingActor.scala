@@ -1,3 +1,5 @@
+package actors
+
 import akka.actor.{Cancellable, ActorSystem, ActorLogging, Actor}
 import akka.util.Timeout
 import scala.concurrent.ExecutionContext
@@ -22,7 +24,7 @@ object WorkingActor extends Actor with ActorLogging {
 
   var number: Int = 0
 
-  def drawWork()  {
+  def drawWork() {
     print("\b \b")
     number += 1
     number match {
@@ -36,13 +38,16 @@ object WorkingActor extends Actor with ActorLogging {
         print("-")
       }
       case 3 => {
-        print("|")
+        print("\\")
       }
       case 4 => {
-        print("\\")
+        print("|")
       }
       case 5 => {
         print("-")
+      }
+      case 6 => {
+        print("\\")
       }
       case _ => {
         number = -1
@@ -53,7 +58,7 @@ object WorkingActor extends Actor with ActorLogging {
 
   def receive: WorkingActor.Receive = {
     case "start" => {
-      scheduler = system.scheduler.schedule(0 milliseconds, 0.1 .second, self, "work")
+      scheduler = system.scheduler.schedule(0 milliseconds, 0.1.second, self, "work")
     }
     case "work" => {
       drawWork()

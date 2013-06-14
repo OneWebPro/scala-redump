@@ -1,3 +1,5 @@
+package assets
+
 /**
  * Created with IntelliJ IDEA.
  * User: mromanski
@@ -10,13 +12,14 @@ import pl.project13.scala.rainbow.Rainbow._
 
 object Messages {
 
-  val v: String = "1.0.0"
+  val v: String = "2.0.0"
 
   def hello() {
     line
-    println("Hello User! Im in version: " + v)
+    println("Created by loki@onewebpro!!".red)
+    println("Hello User! Im in version: " + v.green)
     println("WE ARE LEGION!".red)
-    println("I will ReDump your var_dump array!")
+    println("I will ReDump your var_dump array nad print_r array!")
     println("You can set two paths, starting this app.\nFirst is for file to load, second is path to save file.")
     println("Or I will set defaults files. Temporary is " + "temp.dump".red + " for file with dump.\nAnd " + "temp.array.php".red + " for result.")
     println("Now I start ReDumping ser.")
