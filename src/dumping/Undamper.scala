@@ -68,7 +68,7 @@ object Undamper {
           Patterns.textBracket.findAllMatchIn(replacment).foreach {
             (m2) => {
               val list = m2.group(0).filter(elem => elem == "}".charAt(0))
-              replacment = "'" + m2.group(2) + "'" + ",\n\t " + "}" * list.size
+              replacment = "'" + m2.group(2).replace("}","") + "'" + ",\n\t " + "}" * list.size
             }
           }
         } else {
