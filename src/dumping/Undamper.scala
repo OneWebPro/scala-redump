@@ -21,7 +21,7 @@ object Undamper {
       s2 = Patterns.arrayPrint.replaceAllIn(s2, "array")
     }
     s2 = Patterns.string replaceAllIn(s2, "")
-    s2 = s2.replaceAll( """<(?!/?a(?=>|\s.*>))/?.*?>""", "")
+    s2 = s2.replaceAll( "<[^>]*>", "")
     s2 = s2.replace("\"", "")
     s2 = s2.replace("'", "")
     s2 = fixNames(s2)
@@ -67,8 +67,8 @@ object Undamper {
         if (!isPrint) {
           Patterns.textBracket.findAllMatchIn(replacment).foreach {
             (m2) => {
-              val list = m2.subgroups.filter(elem => elem != null)
-              replacment = "'" + m2.group(2) + "'" + ",\n\t " + "}" * (list.size - 2)
+              val list = m2.group(0).filter(elem => elem == "}".charAt(0))
+              replacment = "'" + m2.group(2) + "'" + ",\n\t " + "}" * list.size
             }
           }
         } else {
@@ -94,7 +94,7 @@ object Undamper {
           replacment = "NULL" + m.group(6)
           val groupReplace = m.group(0).replace(m.group(6), replacment)
           matches = matches.replace(m.group(0), groupReplace)
-        } else {
+        } else if(!replacment.contentEquals("'NULL',\n\t")){
           val groupReplace = m.group(0).replace(m.group(5), replacment)
           matches = matches.replace(m.group(0), groupReplace)
         }
