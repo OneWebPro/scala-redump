@@ -37,6 +37,8 @@ object Undamper {
     s2 = s2.replace("]", "")
     s2 = s2.replace("NULL", "NULL,\n\t")
     s2 = replaceLast(s2)
+    s2 = s2.replace("'NULL,\n\t',","NULL,\n\t")
+    s2 = s2.replace("'NULL,\n\t      ',","NULL,\n\t")
     s2 = s2 dropRight 1
     "<?php \n\t return " + s2 + ";"
   }
