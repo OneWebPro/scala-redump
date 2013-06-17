@@ -65,8 +65,8 @@ object Undamper {
         if (!isPrint) {
           Patterns.textBracket.findAllMatchIn(replacment).foreach {
             (m2) => {
-              val list = m2.subgroups.filter(elem => elem != null)
-              replacment = "'" + m2.group(2) + "'" + ",\n\t " + "}" * (list.size - 2)
+              val list = m2.group(0).filter(elem => elem == "}".charAt(0))
+              replacment = "'" + m2.group(2).replace("}","") + "'" + ",\n\t " + "}" * list.size
             }
           }
         } else {
@@ -92,7 +92,7 @@ object Undamper {
           replacment = "NULL" + m.group(6)
           val groupReplace = m.group(0).replace(m.group(6), replacment)
           matches = matches.replace(m.group(0), groupReplace)
-        } else {
+        } else if(!replacment.contentEquals("'NULL',\n\t")){
           val groupReplace = m.group(0).replace(m.group(5), replacment)
           matches = matches.replace(m.group(0), groupReplace)
         }
@@ -127,6 +127,7 @@ object Undamper {
         }
       }
     }
+
     matches
   }
 
