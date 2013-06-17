@@ -21,7 +21,10 @@ object Undamper {
       s2 = Patterns.arrayPrint.replaceAllIn(s2, "array")
     }
     s2 = Patterns.string replaceAllIn(s2, "")
-    //s2 = escapeHtml(s2)
+//    s2 = s2.replaceAll( "<[^>]*>", "")
+//    s2 = s2.replace("\"", "")
+//    s2 = s2.replace("'", "")
+//      s2 = escapeHtml(s2)
     s2 = fixNames(s2)
     s2 = replaceVariables(s2)
     if (!isPrint) {
