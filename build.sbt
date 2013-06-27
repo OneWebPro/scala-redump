@@ -16,5 +16,3 @@ libraryDependencies += "org.scalatest" % "scalatest_2.9.0" % "1.6.1"
 
 libraryDependencies += "pl.project13.scala" %% "rainbow" % "0.1"
 
-libraryDependencies += "org.lesscss" % "lesscss" % "1.3.3"
-
