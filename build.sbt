@@ -8,7 +8,7 @@ organization := "OneWebPro"
 
 scalaVersion := "2.10.2"
 
-mainClass := Some("main.Main")
+mainClass := Some("Main")
 
 libraryDependencies += "com.typesafe.akka" % "akka-actor_2.10"  % "2.1.2"
 
