@@ -2,7 +2,7 @@ seq(com.github.retronym.SbtOneJar.oneJarSettings: _*)
 
 name := "redump"
 
-version := "0.1"
+version := "2.0"
 
 organization := "OneWebPro"
 
