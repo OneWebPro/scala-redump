@@ -11,7 +11,7 @@ import scala.util.matching.Regex
 object HtmlPatterns extends Enumeration{
   type Patterns = Regex
   val element = "(\\S+)=[\"']?((?:.(?![\"']?\\s+(?:\\S+)=|[>\"']))+.)[\"']?".r
-  //val element = "(\\S+)=(\"|'| |)(.*)(\"|'| |>)".r
+  val elementAttributes = "(\\S+)=[\"']?((?:.(?![\"']?\\s+(?:\\S+)=|[>\"']))+.)[\"']?".r
   val comments = "(?:[^<]|<[^!]|<![^-\\[]|<!\\[(?!CDATA)|<!\\[CDATA\\[.*?\\]\\]>|<!--(?:[^-]|-[^-])*-->)".r
 }
 
