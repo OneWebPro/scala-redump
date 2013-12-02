@@ -13,10 +13,14 @@ object Undamper {
   var isPrint: Boolean = false
 
   def ->(s: String): String = {
-   ""
+   val matches = Patterns.array.findFirstMatchIn(s)
+    if (matches.isDefined) {
+      matches.get.group(1)
+    }
+    ""
   }
 
-  private def fixNames(value: String): String = {
+ /* private def fixNames(value: String): String = {
     var matches: String = value
     matches = Patterns.variable_name.replaceAllIn(matches, m => if (m.group(0).matches("\\s*(\\d*)\\s*")) m.group(0) else "'" + m.group(0) + "'")
     matches
@@ -161,6 +165,6 @@ object Undamper {
       }
     }
     matches
-  }
+  }*/
 
 }

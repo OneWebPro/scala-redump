@@ -1,0 +1,352 @@
+array(2) {
+  ["Instruments"]=>
+  array(8) {
+    [0]=>
+    array(20) {
+      ["ISIN"]=>
+      string(12) "PLFRENT00014"
+      ["DATA_CH"]=>
+      string(12) "201307221157"
+      ["DATE1"]=>
+      string(10) "22.07.2013"
+      ["DATE2"]=>
+      string(5) "11:57"
+      ["NAZWA"]=>
+      string(9) "FOREVEREN"
+      ["SKROT"]=>
+      string(9) "FOREVEREN"
+      ["K_ODN"]=>
+      string(15) "           0,23"
+      ["K_OST"]=>
+      string(15) "           0,31"
+      ["K_OTW"]=>
+      string(15) "           0,26"
+      ["K_MIN"]=>
+      string(15) "           0,24"
+      ["K_MAX"]=>
+      string(15) "           0,31"
+      ["WOL"]=>
+      string(12) "     393 140"
+      ["OBROT"]=>
+      string(15) "         114,32"
+      ["ZMIANA"]=>
+      string(15) "          34,78"
+      ["ZMIANA_PKT"]=>
+      string(15) "           0,08"
+      ["N_ZMIANA_PCT"]=>
+      string(5) "34,78"
+      ["N_WOL"]=>
+      string(6) "393140"
+      ["N_OBROT"]=>
+      string(8) "114319,3"
+      ["GR_PW"]=>
+      string(2) "NA"
+      ["GRUPA"]=>
+      string(11) "akcje i PDA"
+    }
+    [1]=>
+    array(20) {
+      ["ISIN"]=>
+      string(12) "PLHRDEX00021"
+      ["DATA_CH"]=>
+      string(12) "201307221159"
+      ["DATE1"]=>
+      string(10) "22.07.2013"
+      ["DATE2"]=>
+      string(5) "11:59"
+      ["NAZWA"]=>
+      string(9) "GLOBALNRG"
+      ["SKROT"]=>
+      string(9) "GLOBALNRG"
+      ["K_ODN"]=>
+      string(15) "           0,99"
+      ["K_OST"]=>
+      string(15) "           1,11"
+      ["K_OTW"]=>
+      string(15) "           1,06"
+      ["K_MIN"]=>
+      string(15) "           1,02"
+      ["K_MAX"]=>
+      string(15) "           1,12"
+      ["WOL"]=>
+      string(12) "     195 209"
+      ["OBROT"]=>
+      string(15) "         209,35"
+      ["ZMIANA"]=>
+      string(15) "          12,12"
+      ["ZMIANA_PKT"]=>
+      string(15) "           0,12"
+      ["N_ZMIANA_PCT"]=>
+      string(5) "12,12"
+      ["N_WOL"]=>
+      string(6) "195209"
+      ["N_OBROT"]=>
+      string(9) "209354,21"
+      ["GR_PW"]=>
+      string(2) "C1"
+      ["GRUPA"]=>
+      string(11) "akcje i PDA"
+    }
+    [2]=>
+    array(20) {
+      ["ISIN"]=>
+      string(12) "PLEKEP000019"
+      ["DATA_CH"]=>
+      string(12) "201307221159"
+      ["DATE1"]=>
+      string(10) "22.07.2013"
+      ["DATE2"]=>
+      string(5) "11:59"
+      ["NAZWA"]=>
+      string(9) "EKOEXPORT"
+      ["SKROT"]=>
+      string(9) "EKOEXPORT"
+      ["K_ODN"]=>
+      string(15) "          24,31"
+      ["K_OST"]=>
+      string(15) "          26,36"
+      ["K_OTW"]=>
+      string(15) "          24,45"
+      ["K_MIN"]=>
+      string(15) "          24,45"
+      ["K_MAX"]=>
+      string(15) "          26,88"
+      ["WOL"]=>
+      string(12) "      40 708"
+      ["OBROT"]=>
+      string(15) "       1 032,73"
+      ["ZMIANA"]=>
+      string(15) "           8,43"
+      ["ZMIANA_PKT"]=>
+      string(15) "           2,05"
+      ["N_ZMIANA_PCT"]=>
+      string(4) "8,43"
+      ["N_WOL"]=>
+      string(5) "40708"
+      ["N_OBROT"]=>
+      string(10) "1032728,45"
+      ["GR_PW"]=>
+      string(2) "C1"
+      ["GRUPA"]=>
+      string(11) "akcje i PDA"
+    }
+    [3]=>
+    array(20) {
+      ["ISIN"]=>
+      string(12) "PLCNTSL00014"
+      ["DATA_CH"]=>
+      string(12) "201307221158"
+      ["DATE1"]=>
+      string(10) "22.07.2013"
+      ["DATE2"]=>
+      string(5) "11:58"
+      ["NAZWA"]=>
+      string(6) "COGNOR"
+      ["SKROT"]=>
+      string(6) "COGNOR"
+      ["K_ODN"]=>
+      string(15) "           1,24"
+      ["K_OST"]=>
+      string(15) "           1,32"
+      ["K_OTW"]=>
+      string(15) "           1,24"
+      ["K_MIN"]=>
+      string(15) "           1,22"
+      ["K_MAX"]=>
+      string(15) "           1,32"
+      ["WOL"]=>
+      string(12) "      90 314"
+      ["OBROT"]=>
+      string(15) "         116,39"
+      ["ZMIANA"]=>
+      string(15) "           6,45"
+      ["ZMIANA_PKT"]=>
+      string(15) "           0,08"
+      ["N_ZMIANA_PCT"]=>
+      string(4) "6,45"
+      ["N_WOL"]=>
+      string(5) "90314"
+      ["N_OBROT"]=>
+      string(9) "116385,11"
+      ["GR_PW"]=>
+      string(2) "C1"
+      ["GRUPA"]=>
+      string(11) "akcje i PDA"
+    }
+    [4]=>
+    array(20) {
+      ["ISIN"]=>
+      string(12) "PLVSTLA00011"
+      ["DATA_CH"]=>
+      string(12) "201307221159"
+      ["DATE1"]=>
+      string(10) "22.07.2013"
+      ["DATE2"]=>
+      string(5) "11:59"
+      ["NAZWA"]=>
+      string(7) "VISTULA"
+      ["SKROT"]=>
+      string(7) "VISTULA"
+      ["K_ODN"]=>
+      string(15) "           1,07"
+      ["K_OST"]=>
+      string(15) "           1,04"
+      ["K_OTW"]=>
+      string(15) "           1,06"
+      ["K_MIN"]=>
+      string(15) "           1,03"
+      ["K_MAX"]=>
+      string(15) "           1,07"
+      ["WOL"]=>
+      string(12) "     103 401"
+      ["OBROT"]=>
+      string(15) "         107,80"
+      ["ZMIANA"]=>
+      string(15) "          -2,80"
+      ["ZMIANA_PKT"]=>
+      string(15) "          -0,03"
+      ["N_ZMIANA_PCT"]=>
+      string(4) "-2,8"
+      ["N_WOL"]=>
+      string(6) "103401"
+      ["N_OBROT"]=>
+      string(9) "107797,27"
+      ["GR_PW"]=>
+      string(2) "C1"
+      ["GRUPA"]=>
+      string(11) "akcje i PDA"
+    }
+    [5]=>
+    array(20) {
+      ["ISIN"]=>
+      string(12) "CY0101062111"
+      ["DATA_CH"]=>
+      string(12) "201307221159"
+      ["DATE1"]=>
+      string(10) "22.07.2013"
+      ["DATE2"]=>
+      string(5) "11:59"
+      ["NAZWA"]=>
+      string(7) "AGROTON"
+      ["SKROT"]=>
+      string(7) "AGROTON"
+      ["K_ODN"]=>
+      string(15) "           1,63"
+      ["K_OST"]=>
+      string(15) "           1,56"
+      ["K_OTW"]=>
+      string(15) "           1,60"
+      ["K_MIN"]=>
+      string(15) "           1,52"
+      ["K_MAX"]=>
+      string(15) "           1,62"
+      ["WOL"]=>
+      string(12) "      95 237"
+      ["OBROT"]=>
+      string(15) "         148,75"
+      ["ZMIANA"]=>
+      string(15) "          -4,29"
+      ["ZMIANA_PKT"]=>
+      string(15) "          -0,07"
+      ["N_ZMIANA_PCT"]=>
+      string(5) "-4,29"
+      ["N_WOL"]=>
+      string(5) "95237"
+      ["N_OBROT"]=>
+      string(9) "148754,34"
+      ["GR_PW"]=>
+      string(2) "C1"
+      ["GRUPA"]=>
+      string(11) "akcje i PDA"
+    }
+    [6]=>
+    array(20) {
+      ["ISIN"]=>
+      string(12) "PLFRMCL00066"
+      ["DATA_CH"]=>
+      string(12) "201307221157"
+      ["DATE1"]=>
+      string(10) "22.07.2013"
+      ["DATE2"]=>
+      string(5) "11:57"
+      ["NAZWA"]=>
+      string(8) "FARMACOL"
+      ["SKROT"]=>
+      string(8) "FARMACOL"
+      ["K_ODN"]=>
+      string(15) "          49,90"
+      ["K_OST"]=>
+      string(15) "          47,75"
+      ["K_OTW"]=>
+      string(15) "          50,00"
+      ["K_MIN"]=>
+      string(15) "          46,26"
+      ["K_MAX"]=>
+      string(15) "          50,00"
+      ["WOL"]=>
+      string(12) "      10 485"
+      ["OBROT"]=>
+      string(15) "         494,45"
+      ["ZMIANA"]=>
+      string(15) "          -4,31"
+      ["ZMIANA_PKT"]=>
+      string(15) "          -2,15"
+      ["N_ZMIANA_PCT"]=>
+      string(5) "-4,31"
+      ["N_WOL"]=>
+      string(5) "10485"
+      ["N_OBROT"]=>
+      string(8) "494454,1"
+      ["GR_PW"]=>
+      string(2) "C1"
+      ["GRUPA"]=>
+      string(11) "akcje i PDA"
+    }
+    [7]=>
+    array(20) {
+      ["ISIN"]=>
+      string(12) "PLMSTSD00019"
+      ["DATA_CH"]=>
+      string(12) "201307221156"
+      ["DATE1"]=>
+      string(10) "22.07.2013"
+      ["DATE2"]=>
+      string(5) "11:56"
+      ["NAZWA"]=>
+      string(9) "POLIMEXMS"
+      ["SKROT"]=>
+      string(9) "POLIMEXMS"
+      ["K_ODN"]=>
+      string(15) "           0,18"
+      ["K_OST"]=>
+      string(15) "           0,17"
+      ["K_OTW"]=>
+      string(15) "           0,18"
+      ["K_MIN"]=>
+      string(15) "           0,17"
+      ["K_MAX"]=>
+      string(15) "           0,18"
+      ["WOL"]=>
+      string(12) "   1 250 767"
+      ["OBROT"]=>
+      string(15) "         221,05"
+      ["ZMIANA"]=>
+      string(15) "          -5,56"
+      ["ZMIANA_PKT"]=>
+      string(15) "          -0,01"
+      ["N_ZMIANA_PCT"]=>
+      string(5) "-5,56"
+      ["N_WOL"]=>
+      string(7) "1250767"
+      ["N_OBROT"]=>
+      string(9) "221046,13"
+      ["GR_PW"]=>
+      string(2) "C1"
+      ["GRUPA"]=>
+      string(11) "akcje i PDA"
+    }
+  }
+  ["mainType"]=>
+  string(1) "i"
+}
+

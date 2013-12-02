@@ -1,0 +1,575 @@
+
+array(53) {
+  ["DANE"]=>
+  array(124) {
+    ["WID"]=>
+    int(15711017)
+    ["ZRODLO"]=>
+    string(9) "nocoty.pl"
+    ["TYTUL"]=>
+    string(53) "Marta Wierzbicka z facetem lansuje się...w obuwniczym"
+    ["TRESC"]=>
+    string(1472) "
+Nigdy o Marcie Wierzbickiej nie było tak głośno, jak po tym, gdy pokazała nagi biust w Playboyu. Chyba sama się przestraszyła tego szumu, jaki narobiła, bo w kilku wywiadach zaczęła się tłumaczyć a nawet żalić.
+<br /><br />
+Widać, że gwieździe Na Wspólnej nie doradza żaden specjalista od wizerunku, bo pewnie on zaleciłby jej, by nieco odpuściła obecność w mediach i na bankietach... Wierzbicka jednak tak nie mogła się powstrzymać od promocyjnych zakupów, że widzimy ją na kolejnej imprezie, na którą zdążyła wpaść jeszcze przed finałem Top Model. Kto z nią był? Oczywiście, że jej narzeczony, który chyba pokochał błysk fleszy.
+<br /><br />
+Marcie chyba nie przeszkadza to, że niebawem stanie się celebrytką znaną jedynie z bywania. Ważne, że udało jej się kupić tańsze buty!
+<br /><br /><table width="410" border="0" cellspacing="0" cellpadding="2" bgcolor="#8d8d8d" align="left"><tr><td bgcolor="#ffffff" align="center"><img src="http://i.wp.pl/a/f/jpeg/31422/buty410.jpeg" width="410" height="616" border="0" alt="" /></td></tr><tr><td bgcolor="#ffffff" id="podpis" align="left"> (fot. Fotografia: AKPA)</td></tr></table>
+<table width="410" border="0" cellspacing="0" cellpadding="2" bgcolor="#8d8d8d" align="left"><tr><td bgcolor="#ffffff" align="center"><img src="http://i.wp.pl/a/f/jpeg/31422/buty411.jpeg" width="410" height="616" border="0" alt="" /></td></tr><tr><td bgcolor="#ffffff" id="podpis" align="left"> (fot. Fotografia: AKPA)</td></tr></table>"
+    ["ZAJAWKA"]=>
+    string(44) "Naprawdę chce, by tak wyglądała jej kariera?"
+    ["DATA"]=>
+    string(18) "2013-06-06 (15:33)"
+    ["SLOWA"]=>
+    string(16) "marta wierzbicka"
+    ["DATA_AKT"]=>
+    NULL
+    ["CONTENT"]=>
+    NULL
+    ["CREATEDBY"]=>
+    int(44004)
+    ["MODIFIEDBY"]=>
+    int(44004)
+    ["READONLY"]=>
+    string(1) "t"
+    ["OWNER"]=>
+    int(6961)
+    ["ISLONG"]=>
+    string(1) "N"
+    ["CREATED"]=>
+    string(18) "2013-06-06 (15:43)"
+    ["MODIFIED"]=>
+    string(18) "2013-06-06 (15:43)"
+    ["URL1"]=>
+    string(40) "http://i.wp.pl/a/f/jpeg/31422/buty1.jpeg"
+    ["URL2"]=>
+    string(40) "http://i.wp.pl/a/f/jpeg/31422/buty2.jpeg"
+    ["URL3"]=>
+    string(40) "http://i.wp.pl/a/f/jpeg/31422/buty3.jpeg"
+    ["URL4"]=>
+    string(40) "http://i.wp.pl/a/f/jpeg/31422/buty4.jpeg"
+    ["URL5"]=>
+    NULL
+    ["URL6"]=>
+    NULL
+    ["IMGSIZE1"]=>
+    string(20) "width=627 height=311"
+    ["IMGSIZE2"]=>
+    string(20) "width=371 height=249"
+    ["IMGSIZE3"]=>
+    string(20) "width=171 height=118"
+    ["IMGSIZE4"]=>
+    string(18) "width=96 height=67"
+    ["IMGSIZE5"]=>
+    NULL
+    ["IMGSIZE6"]=>
+    NULL
+    ["IMGID1"]=>
+    int(15711009)
+    ["IMGID2"]=>
+    int(15711010)
+    ["IMGID3"]=>
+    int(15711011)
+    ["IMGID4"]=>
+    int(15711012)
+    ["IMGID5"]=>
+    NULL
+    ["IMGID6"]=>
+    NULL
+    ["IMG1_REPO_ID"]=>
+    NULL
+    ["IMG2_REPO_ID"]=>
+    NULL
+    ["IMG3_REPO_ID"]=>
+    NULL
+    ["IMG4_REPO_ID"]=>
+    NULL
+    ["IMG5_REPO_ID"]=>
+    NULL
+    ["IMG6_REPO_ID"]=>
+    NULL
+    ["IMG1_REPO_FILE_NAME"]=>
+    NULL
+    ["IMG2_REPO_FILE_NAME"]=>
+    NULL
+    ["IMG3_REPO_FILE_NAME"]=>
+    NULL
+    ["IMG4_REPO_FILE_NAME"]=>
+    NULL
+    ["IMG5_REPO_FILE_NAME"]=>
+    NULL
+    ["IMG6_REPO_FILE_NAME"]=>
+    NULL
+    ["IMG1_REPO_DESCRIPTION"]=>
+    NULL
+    ["IMG2_REPO_DESCRIPTION"]=>
+    NULL
+    ["IMG3_REPO_DESCRIPTION"]=>
+    NULL
+    ["IMG4_REPO_DESCRIPTION"]=>
+    NULL
+    ["IMG5_REPO_DESCRIPTION"]=>
+    NULL
+    ["IMG6_REPO_DESCRIPTION"]=>
+    NULL
+    ["THUMB1_REPO_ID"]=>
+    NULL
+    ["THUMB2_REPO_ID"]=>
+    NULL
+    ["THUMB3_REPO_ID"]=>
+    NULL
+    ["THUMB4_REPO_ID"]=>
+    NULL
+    ["THUMB5_REPO_ID"]=>
+    NULL
+    ["THUMB6_REPO_ID"]=>
+    NULL
+    ["THUMB1_REPO_FILE_NAME"]=>
+    NULL
+    ["THUMB2_REPO_FILE_NAME"]=>
+    NULL
+    ["THUMB3_REPO_FILE_NAME"]=>
+    NULL
+    ["THUMB4_REPO_FILE_NAME"]=>
+    NULL
+    ["THUMB5_REPO_FILE_NAME"]=>
+    NULL
+    ["THUMB6_REPO_FILE_NAME"]=>
+    NULL
+    ["THUMB1_REPO_DESCRIPTION"]=>
+    NULL
+    ["THUMB2_REPO_DESCRIPTION"]=>
+    NULL
+    ["THUMB3_REPO_DESCRIPTION"]=>
+    NULL
+    ["THUMB4_REPO_DESCRIPTION"]=>
+    NULL
+    ["THUMB5_REPO_DESCRIPTION"]=>
+    NULL
+    ["THUMB6_REPO_DESCRIPTION"]=>
+    NULL
+    ["COVER_URL"]=>
+    NULL
+    ["COVER_IMGSIZE"]=>
+    NULL
+    ["COVER_IMGID"]=>
+    NULL
+    ["COVER_REPO_ID"]=>
+    NULL
+    ["COVER_REPO_FILE_NAME"]=>
+    NULL
+    ["COVER_REPO_DESCRIPTION"]=>
+    NULL
+    ["MEDIUM_URL"]=>
+    NULL
+    ["MEDIUM_IMGSIZE"]=>
+    NULL
+    ["MEDIUM_IMGID"]=>
+    NULL
+    ["MEDIUM_REPO_ID"]=>
+    NULL
+    ["MEDIUM_REPO_FILE_NAME"]=>
+    NULL
+    ["MEDIUM_REPO_DESCRIPTION"]=>
+    NULL
+    ["NADTYTUL"]=>
+    NULL
+    ["LINKI_WWW"]=>
+    NULL
+    ["SRC_PIC_CODE"]=>
+    NULL
+    ["SRC_ID"]=>
+    int(0)
+    ["MOVIE_URL"]=>
+    NULL
+    ["SOUND_URL"]=>
+    NULL
+    ["OPIMODE"]=>
+    string(5) "ddddd"
+    ["FB_COMMENTS"]=>
+    string(1) "d"
+    ["WIDOCZNA"]=>
+    string(1) "t"
+    ["ILEOPINI"]=>
+    int(0)
+    ["POKAZ_ZRODLO_PIC"]=>
+    bool(false)
+    ["IMG1_PUT_AUTO"]=>
+    string(1) "t"
+    ["POKAZ_SYGNATURE"]=>
+    string(1) "n"
+    ["SYGNATURA_AUTORA"]=>
+    NULL
+    ["KATEGORIE_CYFRAMI"]=>
+    array(3) {
+      [0]=>
+      int(1013539)
+      [1]=>
+      int(1023505)
+      [2]=>
+      int(1013579)
+    }
+    ["KATEGORIE"]=>
+    array(3) {
+      [0]=>
+      string(16) "/No co ty/Newsy/"
+      [1]=>
+      string(15) "/Orange/Nocoty/"
+      [2]=>
+      string(30) "/No co ty/Newsy/Strona główna/"
+    }
+    ["MOVIE_ID"]=>
+    NULL
+    ["SOUND_ID"]=>
+    NULL
+    ["MOVIE_STREAMMODE"]=>
+    NULL
+    ["FLASH_MOVIE_URL"]=>
+    NULL
+    ["FLASH_MOVIE_ID"]=>
+    NULL
+    ["WPTV_FLASH_MOVIE_URL"]=>
+    NULL
+    ["IS_RATINGABLE"]=>
+    string(1) "n"
+    ["ALL_RATE"]=>
+    NULL
+    ["IS_MULTISOURCE"]=>
+    int(0)
+    ["META_TITLE"]=>
+    NULL
+    ["META_KEYWORDS"]=>
+    NULL
+    ["META_DESCRIPTION"]=>
+    NULL
+    ["ATTACHMENTS"]=>
+    array(0) {
+    }
+    ["OVERAGE"]=>
+    int(12)
+    ["VISIBILITY_IN_SERVICES"]=>
+    array(11) {
+      [12217]=>
+      string(1) "t"
+      [6081]=>
+      string(1) "n"
+      [13049]=>
+      string(1) "n"
+      [10161]=>
+      string(1) "t"
+      [593]=>
+      string(1) "n"
+      [10321]=>
+      string(1) "n"
+      [8481]=>
+      string(1) "n"
+      [11963]=>
+      string(1) "n"
+      [3625]=>
+      string(1) "n"
+      [11725]=>
+      string(1) "n"
+      [6961]=>
+      string(1) "t"
+    }
+    ["ZRODLA"]=>
+    array(1) {
+      [0]=>
+      array(5) {
+        ["ID"]=>
+        int(0)
+        ["NAZWA"]=>
+        string(9) "nocoty.pl"
+        ["URL"]=>
+        NULL
+        ["IMAGE_URL"]=>
+        string(0) ""
+        ["IMAGE_WH"]=>
+        NULL
+      }
+    }
+    ["USER_AUTHOR"]=>
+    NULL
+    ["MOVIE_TITLE"]=>
+    NULL
+    ["MOVIE_DESCRIPTION"]=>
+    NULL
+    ["MOVIE_ZRODLO"]=>
+    NULL
+    ["MOVIE_ZRODLO_ID"]=>
+    NULL
+    ["FLASH_MOVIE_TITLE"]=>
+    NULL
+    ["FLASH_MOVIE_DESCRIPTION"]=>
+    NULL
+    ["FLASH_MOVIE_ZRODLO"]=>
+    NULL
+    ["FLASH_MOVIE_ZRODLO_ID"]=>
+    NULL
+    ["KATEGORIE_INFO"]=>
+    array(3) {
+      [0]=>
+      array(23) {
+        ["ID_CC"]=>
+        string(7) "1013539"
+        ["CREATED"]=>
+        string(8) "07/10/19"
+        ["MODIFIED"]=>
+        string(8) "07/10/19"
+        ["INFO"]=>
+        NULL
+        ["NAME"]=>
+        string(5) "Newsy"
+        ["COUNTER"]=>
+        string(1) "5"
+        ["WAGA"]=>
+        string(1) "0"
+        ["TABLENAME"]=>
+        NULL
+        ["OPIS"]=>
+        NULL
+        ["WIDOCZNY"]=>
+        string(1) "1"
+        ["SHORT_NAME"]=>
+        NULL
+        ["OLD_ID"]=>
+        NULL
+        ["PIC_SRC"]=>
+        NULL
+        ["PIC_WH"]=>
+        NULL
+        ["PIC_SRC_S"]=>
+        NULL
+        ["PIC_WH_S"]=>
+        NULL
+        ["ISCOMMENTED"]=>
+        string(1) "n"
+        ["COMMENTS_CID"]=>
+        NULL
+        ["URL"]=>
+        NULL
+        ["META_TITLE"]=>
+        NULL
+        ["META_DESCRIPTION"]=>
+        string(11) "fotki+fotki"
+        ["META_KEYWORDS"]=>
+        NULL
+        ["KEYWORDS"]=>
+        NULL
+      }
+      [1]=>
+      array(23) {
+        ["ID_CC"]=>
+        string(7) "1023505"
+        ["CREATED"]=>
+        string(8) "09/06/10"
+        ["MODIFIED"]=>
+        string(8) "09/06/10"
+        ["INFO"]=>
+        NULL
+        ["NAME"]=>
+        string(6) "Nocoty"
+        ["COUNTER"]=>
+        string(1) "0"
+        ["WAGA"]=>
+        string(1) "0"
+        ["TABLENAME"]=>
+        NULL
+        ["OPIS"]=>
+        NULL
+        ["WIDOCZNY"]=>
+        string(1) "1"
+        ["SHORT_NAME"]=>
+        NULL
+        ["OLD_ID"]=>
+        NULL
+        ["PIC_SRC"]=>
+        NULL
+        ["PIC_WH"]=>
+        NULL
+        ["PIC_SRC_S"]=>
+        NULL
+        ["PIC_WH_S"]=>
+        NULL
+        ["ISCOMMENTED"]=>
+        string(1) "n"
+        ["COMMENTS_CID"]=>
+        NULL
+        ["URL"]=>
+        NULL
+        ["META_TITLE"]=>
+        NULL
+        ["META_DESCRIPTION"]=>
+        NULL
+        ["META_KEYWORDS"]=>
+        NULL
+        ["KEYWORDS"]=>
+        NULL
+      }
+      [2]=>
+      array(23) {
+        ["ID_CC"]=>
+        string(7) "1013579"
+        ["CREATED"]=>
+        string(8) "07/10/19"
+        ["MODIFIED"]=>
+        string(8) "07/10/19"
+        ["INFO"]=>
+        NULL
+        ["NAME"]=>
+        string(13) "Strona główna"
+        ["COUNTER"]=>
+        string(1) "5"
+        ["WAGA"]=>
+        string(1) "0"
+        ["TABLENAME"]=>
+        NULL
+        ["OPIS"]=>
+        NULL
+        ["WIDOCZNY"]=>
+        string(1) "1"
+        ["SHORT_NAME"]=>
+        NULL
+        ["OLD_ID"]=>
+        NULL
+        ["PIC_SRC"]=>
+        NULL
+        ["PIC_WH"]=>
+        NULL
+        ["PIC_SRC_S"]=>
+        NULL
+        ["PIC_WH_S"]=>
+        NULL
+        ["ISCOMMENTED"]=>
+        string(1) "n"
+        ["COMMENTS_CID"]=>
+        NULL
+        ["URL"]=>
+        NULL
+        ["META_TITLE"]=>
+        NULL
+        ["META_DESCRIPTION"]=>
+        NULL
+        ["META_KEYWORDS"]=>
+        NULL
+        ["KEYWORDS"]=>
+        NULL
+      }
+    }
+  }
+  ["IMG1_URL"]=>
+  string(40) "http://i.wp.pl/a/f/jpeg/31422/buty1.jpeg"
+  ["IMG1_WIDTH"]=>
+  string(3) "627"
+  ["IMG1_HEIGHT"]=>
+  string(3) "311"
+  ["IMG1_DESCRIPTION"]=>
+  NULL
+  ["IMG1_TITLE"]=>
+  NULL
+  ["IMG1_ZRODLO"]=>
+  string(16) "Fotografia: AKPA"
+  ["IMG1P_URL"]=>
+  NULL
+  ["IMG1P_WIDTH"]=>
+  NULL
+  ["IMG1P_HEIGHT"]=>
+  NULL
+  ["IMG1P_DESCRIPTION"]=>
+  NULL
+  ["IMG1P_TITLE"]=>
+  NULL
+  ["IMG1P_ZRODLO"]=>
+  NULL
+  ["IMG2_URL"]=>
+  string(40) "http://i.wp.pl/a/f/jpeg/31422/buty2.jpeg"
+  ["IMG2_WIDTH"]=>
+  string(3) "371"
+  ["IMG2_HEIGHT"]=>
+  string(3) "249"
+  ["IMG2_DESCRIPTION"]=>
+  NULL
+  ["IMG2_TITLE"]=>
+  NULL
+  ["IMG2_ZRODLO"]=>
+  string(16) "Fotografia: AKPA"
+  ["IMG2P_URL"]=>
+  NULL
+  ["IMG2P_WIDTH"]=>
+  NULL
+  ["IMG2P_HEIGHT"]=>
+  NULL
+  ["IMG2P_DESCRIPTION"]=>
+  NULL
+  ["IMG2P_TITLE"]=>
+  NULL
+  ["IMG2P_ZRODLO"]=>
+  NULL
+  ["IMG3_URL"]=>
+  string(40) "http://i.wp.pl/a/f/jpeg/31422/buty3.jpeg"
+  ["IMG3_WIDTH"]=>
+  string(3) "171"
+  ["IMG3_HEIGHT"]=>
+  string(3) "118"
+  ["IMG3_DESCRIPTION"]=>
+  NULL
+  ["IMG3_TITLE"]=>
+  NULL
+  ["IMG3_ZRODLO"]=>
+  string(16) "Fotografia: AKPA"
+  ["IMG3P_URL"]=>
+  NULL
+  ["IMG3P_WIDTH"]=>
+  NULL
+  ["IMG3P_HEIGHT"]=>
+  NULL
+  ["IMG3P_DESCRIPTION"]=>
+  NULL
+  ["IMG3P_TITLE"]=>
+  NULL
+  ["IMG3P_ZRODLO"]=>
+  NULL
+  ["IMG4_URL"]=>
+  string(40) "http://i.wp.pl/a/f/jpeg/31422/buty4.jpeg"
+  ["IMG4_WIDTH"]=>
+  string(2) "96"
+  ["IMG4_HEIGHT"]=>
+  string(2) "67"
+  ["IMG4_DESCRIPTION"]=>
+  NULL
+  ["IMG4_TITLE"]=>
+  NULL
+  ["IMG4_ZRODLO"]=>
+  string(16) "Fotografia: AKPA"
+  ["IMG4P_URL"]=>
+  NULL
+  ["IMG4P_WIDTH"]=>
+  NULL
+  ["IMG4P_HEIGHT"]=>
+  NULL
+  ["IMG4P_DESCRIPTION"]=>
+  NULL
+  ["IMG4P_TITLE"]=>
+  NULL
+  ["IMG4P_ZRODLO"]=>
+  NULL
+  ["ZRODLO_TEKSTOWO"]=>
+  NULL
+  ["TRESC_STRONICOWANA"]=>
+  array(1) {
+    [0]=>
+    string(1472) "
+Nigdy o Marcie Wierzbickiej nie było tak głośno, jak po tym, gdy pokazała nagi biust w Playboyu. Chyba sama się przestraszyła tego szumu, jaki narobiła, bo w kilku wywiadach zaczęła się tłumaczyć a nawet żalić.
+<br /><br />
+Widać, że gwieździe Na Wspólnej nie doradza żaden specjalista od wizerunku, bo pewnie on zaleciłby jej, by nieco odpuściła obecność w mediach i na bankietach... Wierzbicka jednak tak nie mogła się powstrzymać od promocyjnych zakupów, że widzimy ją na kolejnej imprezie, na którą zdążyła wpaść jeszcze przed finałem Top Model. Kto z nią był? Oczywiście, że jej narzeczony, który chyba pokochał błysk fleszy.
+<br /><br />
+Marcie chyba nie przeszkadza to, że niebawem stanie się celebrytką znaną jedynie z bywania. Ważne, że udało jej się kupić tańsze buty!
+<br /><br /><table width="410" border="0" cellspacing="0" cellpadding="2" bgcolor="#8d8d8d" align="left"><tr><td bgcolor="#ffffff" align="center"><img src="http://i.wp.pl/a/f/jpeg/31422/buty410.jpeg" width="410" height="616" border="0" alt="" /></td></tr><tr><td bgcolor="#ffffff" id="podpis" align="left"> (fot. Fotografia: AKPA)</td></tr></table>
+<table width="410" border="0" cellspacing="0" cellpadding="2" bgcolor="#8d8d8d" align="left"><tr><td bgcolor="#ffffff" align="center"><img src="http://i.wp.pl/a/f/jpeg/31422/buty411.jpeg" width="410" height="616" border="0" alt="" /></td></tr><tr><td bgcolor="#ffffff" id="podpis" align="left"> (fot. Fotografia: AKPA)</td></tr></table>"
+  }
+  ["ILE_STRON"]=>
+  int(1)
+  ["isArticleBlockedOutsidePoland"]=>
+  bool(false)
+}
