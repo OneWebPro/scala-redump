@@ -13,11 +13,19 @@ object Undamper {
   var isPrint: Boolean = false
 
   def ->(s: String): String = {
-   val matches = Patterns.array.findFirstMatchIn(s)
+   val matches = Patterns.arrayedArrays.findFirstMatchIn(s.replace("\n","").replace("\t",""))
     if (matches.isDefined) {
-      matches.get.group(1)
-    }
+      val name = matches.get.group(5)
+      val list = new ElementList(name)
+      getVariables(list, matches.get.group(8))
+      "<?php " + list.getList
+    }else{
     ""
+    }
+  }
+
+  private def getVariables(list:ElementList,vars:String) {
+
   }
 
  /* private def fixNames(value: String): String = {
