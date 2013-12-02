@@ -11,7 +11,7 @@ import scala.util.matching.Regex
 object Patterns extends Enumeration{
   type Patterns = Regex
   val variablesNames = "(\\[)(.*?)(\\])".r
-  val arrayBody = "\\{(.*?)\\}".r
+  val arrayBody = "\\{(.*)\\}".r
   ///////////////////////////////////////////////////////////////
 //  val array = "(?<=\\{)[^\\}]*(?=\\})".r
 //  val arrayVar = "\\s*((array|Array)\\s*\\(\\s*\\d*\\s*\\))\\s*".r
