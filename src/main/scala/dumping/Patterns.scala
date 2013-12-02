@@ -10,7 +10,7 @@ import scala.util.matching.Regex
  */
 object Patterns extends Enumeration{
   type Patterns = Regex
-  val arrayedArrays = "(\\s*array)(\\s*\\(\\d\\))(\\s*\\{\\s*)(\\s*\\[\\s*)(.*?)(\\s*\\])(\\s*=>)(.*)(\\s*\\})".r
+  val array = "(\\s*array)(\\s*\\(\\d\\))(\\s*\\{\\s*)(.*)(\\s*\\})".r
   ///////////////////////////////////////////////////////////////
 //  val array = "(?<=\\{)[^\\}]*(?=\\})".r
 //  val arrayVar = "\\s*((array|Array)\\s*\\(\\s*\\d*\\s*\\))\\s*".r

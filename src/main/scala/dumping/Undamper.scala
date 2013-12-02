@@ -25,6 +25,17 @@ object Undamper {
   }
 
   private def getVariables(list:ElementList,vars:String) {
+    vars match {
+      case Patterns.arrayedArrays => {
+        var matches = Patterns.arrayedArrays.findAllMatchIn(vars)
+      }
+      case _ => {
+
+      }
+    }
+  }
+
+  private def getVars(list:ElementList,vars:String){
 
   }
 
