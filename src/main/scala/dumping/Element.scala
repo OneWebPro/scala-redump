@@ -4,7 +4,7 @@ package dumping
 class Element(valueName: String, valueType: String, value: String) {
   def map: String = {
     "'" + valueName + "' => \n \t" + {
-      valueType match {
+      Types.checkType(valueType) match {
         case Types.STRING => {
           if (value.isEmpty) {
             "NULL"
