@@ -1,20 +1,13 @@
 array(3) {
-	["DANE"] => 
-		array(2) {
-			["XX"] =>
-			string(9) "nocoty.pl"
-			["XX2"] =>
-			string(9) "nocoty.pl"
-		}
 	["DANE2"] => 
 		array(2) {
-			["XX"] =>
+			["XX.2"] =>
 			string(9) "nocoty.pl"
 			["DANE"] => 
 				array(2) {
-					["XX"] =>
+					["XX.2.1"] =>
 					string(9) "nocoty.pl"
-					["XX2"] =>
+					["XX.2.2"] =>
 					string(9) "nocoty.pl"
 				}
 		}

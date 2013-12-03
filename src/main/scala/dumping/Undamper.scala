@@ -13,25 +13,14 @@ object Undamper {
   var isPrint: Boolean = false
 
   def ->(s: String): String = {
-   val matches = Patterns.arrayedArrays.findFirstMatchIn(s.replace("\n","").replace("\t",""))
-    if (matches.isDefined) {
-      val name = matches.get.group(5)
-      val list = new ElementList(name)
-      getVariables(list, matches.get.group(8))
-      "<?php " + list.getList
+   val matches = Patterns.arrayBody.findAllIn(s.replace("\n","").replace("\t",""))
+    if (!matches.isEmpty) {
+//      val name = matches.get.group(5)
+//      val list = new ElementList(name)
+//      getVariables(list, matches.get.group(8))
+      "<?php "
     }else{
     ""
-    }
-  }
-
-  private def getVariables(list:ElementList,vars:String) {
-    vars match {
-      case Patterns.arrayedArrays => {
-        var matches = Patterns.arrayedArrays.findAllMatchIn(vars)
-      }
-      case _ => {
-
-      }
     }
   }
 
